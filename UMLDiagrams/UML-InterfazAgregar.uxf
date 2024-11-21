@@ -1,0 +1,70 @@
+<diagram program="umletino" version="15.1"><zoom_level>6</zoom_level><help_text>Space for diagram notes</help_text><element><id>UMLPackage</id><coordinates><x>390</x><y>36</y><w>870</w><h>786</h></coordinates><panel_attributes>uniandes.dpoo.swing
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>414</x><y>78</y><w>822</w><h>720</h></coordinates><panel_attributes>interfaz
+--</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>444</x><y>312</y><w>762</w><h>462</h></coordinates><panel_attributes>agregar
+--
+bg=#B1C29E</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLPackage</id><coordinates><x>696</x><y>102</y><w>258</w><h>120</h></coordinates><panel_attributes>principal
+--
+bg=#DEAA79</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>348</y><w>210</w><h>60</h></coordinates><panel_attributes>VentanaAgregarRestaurante
+--
+
+--
++ VentanaAgregarRestaurante ( VentanaPrincipal principal )
++ agregarRestaurante ( ): void
++ cerrarVentana ( ): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>1050</x><y>552</y><w>132</w><h>84</h></coordinates><panel_attributes>PanelMapaAgregar
+--
+- labMapa: JLabel
+- x: int
+- y: int
+--
++ PanelMapaAgregar ( )
++ getCoordenadas ( ): int [ ]
+/+ paint ( Graphics g ): void/
+/+ mouseClicked ( MouseEvent e ): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>462</x><y>552</y><w>132</w><h>84</h></coordinates><panel_attributes>PanelEditarRestaurante
+--
+- txtNombre: JTextField
+- cbbCalificacion: JComboBox&lt;String&gt;
+- cbbVisitado: JComboBox&lt;String&gt; 
+--
++ PanelEditarRestaurante ( )
++ getVisitado ( ): boolean
++ getCalificacion ( ): int
++ getNombre ( ): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>696</x><y>552</y><w>252</w><h>78</h></coordinates><panel_attributes>PanelBotonesAgregar
+--
+- CREAR: String
+- CERRAR: String
+- butNuevo: JButton
+- butCerrar: JButton
+--
++ PanelBotonesAgregar ( VentanaAgregarRestaurante ventanaPrincipal )
+/+ actionPerformed ( ActionEvent e ): void/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>762</x><y>702</y><w>114</w><h>54</h></coordinates><panel_attributes>JPanel
+--
+...
+
+--
+...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>522</x><y>630</y><w>252</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>400;170;10;170;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>870</x><y>630</y><w>252</w><h>114</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;170;400;170;400;10</additional_attributes></element><element><id>Relation</id><coordinates><x>810</x><y>624</y><w>18</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;130;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>1068</x><y>504</y><w>18</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>UMLClass</id><coordinates><x>978</x><y>456</y><w>114</w><h>54</h></coordinates><panel_attributes>MouseListener
+--
+...
+
+--
+...</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>618</x><y>456</y><w>114</w><h>54</h></coordinates><panel_attributes>ActionListener
+--
+...
+
+--
+...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>708</x><y>504</y><w>18</w><h>60</h></coordinates><panel_attributes>lt=&lt;&lt;.</panel_attributes><additional_attributes>10;10;10;80</additional_attributes></element><element><id>Relation</id><coordinates><x>522</x><y>372</y><w>210</w><h>192</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+r1=panelDetalles</panel_attributes><additional_attributes>10;300;10;10;330;10</additional_attributes></element><element><id>Relation</id><coordinates><x>924</x><y>372</y><w>234</w><h>192</h></coordinates><panel_attributes>lt=&lt;-
+m1=1
+r1=panelMapa</panel_attributes><additional_attributes>310;300;310;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>822</x><y>402</y><w>114</w><h>162</h></coordinates><panel_attributes>lt=-
+r1=1
+m1=panelBotones
+
+r2=1
+m2=ventanaAgregarRestaurante</panel_attributes><additional_attributes>10;250;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>732</x><y>132</y><w>186</w><h>54</h></coordinates><panel_attributes>VentanaPrincipal
+--
+...
+
+--
+...</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>822</x><y>180</y><w>72</w><h>180</h></coordinates><panel_attributes>lt=&lt;-
+r1=ventanaPrincipal
+m1=1</panel_attributes><additional_attributes>10;10;10;280</additional_attributes></element></diagram>
